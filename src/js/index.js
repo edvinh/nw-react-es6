@@ -1,10 +1,14 @@
 import React from 'react';
-import RaisedButton from 'material-ui/lib/raised-button';
-import AppBar from 'material-ui/lib/app-bar';
+import ReactDOM from 'react-dom';
+import injectTapEventPlugin from 'react-tap-event-plugin';
+import LeftNavMenuBar from './modules/LeftNavMenuBar';
 
-React.render(
-  <AppBar
-    title="Test"
-  />,
+injectTapEventPlugin();
+
+
+
+
+ReactDOM.render(
+  <LeftNavMenuBar />,
   document.getElementById('view')
 );

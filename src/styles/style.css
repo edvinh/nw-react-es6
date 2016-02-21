@@ -2,3 +2,7 @@ body, #view {
     margin: 0;
     padding: 0;
 }
+
+#view > * {
+    margin: 0;
+}
