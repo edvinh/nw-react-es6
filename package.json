@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "dev": "gulp --type dev",
     "start": "./nw/nw dist",
-    "build": "gulp build"
+    "build": "gulp"
   },
   "window": {
     "toolbar": false,
@@ -28,6 +27,7 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
+    "flux": "^2.1.1",
     "material-ui": "^0.14.4",
     "nw-builder": "^2.2.0",
     "react": "^0.14.7",
