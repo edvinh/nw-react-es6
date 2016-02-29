@@ -1,11 +1,12 @@
 import dispatcher from '../dispatcher';
 
-export function createCalendar(date, desc, title) {
+export function createCalendar(eventObj) {
     dispatcher.dispatch({
         type: "CREATE_CALENDAR",
-        date,
-        desc,
-        title
+        date: eventObj.date,
+        time: eventObj.time,
+        desc: eventObj.desc,
+        title: eventObj.title
     });
 }
 
